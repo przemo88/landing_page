@@ -2,6 +2,8 @@
 	text-align: center;
 }
 
+
+
 $white : #FFF;
 
 $silver : #777;
@@ -12,6 +14,9 @@ $silver : #777;
 	height: 700px;
 	color: $white;
 }
+
+@media(max-width: 1550px)
+{
 
 .roboto{
 	font-family: 'Roboto Slab', serif;
@@ -26,8 +31,8 @@ $silver : #777;
 }
 
 .jumbotron{
-	@include jumbotron;
-}
+		@include jumbotron;
+	}
 
 .nav{
 	a{	
@@ -58,7 +63,7 @@ $silver : #777;
 .contact{
 	@include jumbotron;
 	background-image: url('images/contact.png');
-	height: 595px;
+	height: 700px;
 }
 
 ::-webkit-input-placeholder {
@@ -69,10 +74,54 @@ $silver : #777;
 	height: 100px;
 }
 
-@for $a from 1 through 25
+.line{
+		margin-left: 1vh;
+	}
+
+}
+
+
+
+@media( max-width: 992px)
 {
+
+	.ml-1{
+	margin-left: 50px;
+}
+
+	@for $a from 1 through 25{
+	.mt-m-#{$a} 
+	{
+		margin-top: 10px + 10 * $a+!important;
+	}
+} 
+
+	.jumbotron{
+	
+		height: 400px;
+	}
+	a{
+		font-size: 15px;
+	}
+		
+
+	.line{
+		margin-left: 4vh;
+	}
+	
+	.contact{
+	@include jumbotron;
+	background-image: url('images/contact.png');
+	height: 385px;
+}
+}
+
+
+
+@for $a from 1 through 25{
 	.mt-#{$a} 
 	{
 		margin-top: 10px + 10 * $a;
 	}
-}
+} 
+
