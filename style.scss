@@ -2,7 +2,9 @@
 	text-align: center;
 }
 
-
+.border{
+	border: 1px solid black;
+}
 
 $white : #FFF;
 
@@ -11,7 +13,7 @@ $silver : #777;
 @mixin jumbotron{
 	background-image: url('images/jumbotron.jpg');
 	background-size: 100%;
-	height: 700px;
+	height: 600px;
 	color: $white;
 }
 
@@ -63,7 +65,7 @@ $silver : #777;
 .contact{
 	@include jumbotron;
 	background-image: url('images/contact.png');
-	height: 700px;
+	height: 460px;
 }
 
 ::-webkit-input-placeholder {
@@ -76,6 +78,10 @@ $silver : #777;
 
 .line{
 		margin-left: 1vh;
+	}
+
+	.team{
+		display: inline-block;
 	}
 
 }
@@ -98,13 +104,23 @@ $silver : #777;
 
 	.jumbotron{
 	
-		height: 400px;
+		height: 388px;
+
+		h1{
+			font-size: 25px;
+		}	
+
+		h2{
+			font-size: 15px;;
+		}
+
 	}
 	a{
 		font-size: 15px;
 	}
-		
 
+
+	
 	.line{
 		margin-left: 4vh;
 	}
@@ -114,8 +130,71 @@ $silver : #777;
 	background-image: url('images/contact.png');
 	height: 385px;
 }
+
+	.services{
+		color: red;
+	}
 }
 
+@media(max-width: 768px)
+{
+	@for $a from 1 through 25{
+	.mt-s-#{$a} 
+	{
+		margin-top: 10px + 10 * $a;
+	}
+} 
+	
+
+	.jumbotron{
+		height: 250px;
+}
+
+	a{
+		font-size: 15px;
+		margin-top: -10px;
+	}
+
+	.navbar-header{
+		margin-top: -45px;
+	}
+
+	nav a:hover{
+		background-color: red;
+	}
+
+	h2{
+		font-size: 18px;
+	}
+
+	h1{
+		font-size: 15px;
+	}
+
+	.test{
+		display: inline;
+		background-color: red;
+	}
+	
+	.ml-s-1{
+		margin-left: -10px!important;
+	}
+
+	.last{
+		margin-left: 2vw;
+	}
+
+	.team{
+		display: inline-block;
+	}
+
+	.contact{
+	background-image: url("images/contact.png");
+	background-size: 100%;
+
+}
+	
+}
 
 
 @for $a from 1 through 25{
