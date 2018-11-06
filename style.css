@@ -29,7 +29,7 @@
   .services {
     padding: 0px 50px; }
 
-  .pic::before {
+  .pic:before {
     content: url("images/line.png");
     position: relative;
     margin-left: 20px; }
@@ -160,7 +160,13 @@
     height: 385px; }
 
   .services {
-    color: red; } }
+    color: red; }
+
+  .pic:before {
+    content: url("images/line.png");
+    position: relative;
+    margin-left: 20px;
+    margin-left: 55px; } }
 @media (max-width: 768px) {
   .mt-s-1 {
     margin-top: 20px; }
