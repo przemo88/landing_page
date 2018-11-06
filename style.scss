@@ -100,7 +100,7 @@ $silver : #777;
 
 
 
-@media( max-width: 992px)
+@media( max-width: 1000px)
 {
 
 	.ml-1{
@@ -136,15 +136,13 @@ $silver : #777;
 	.contact{
 	@include jumbotron;
 	background-image: url('images/contact.png');
-	height: 385px;
+	height: 400px;
 }
-
-	
 
 		.pic{
 		&:before{
 		@include picture;
-		margin-left: 55px;
+		margin-left: 10px;
 	}
 }
 

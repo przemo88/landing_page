@@ -63,7 +63,7 @@
 
   .team {
     display: inline-block; } }
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
   .ml-1 {
     margin-left: 50px; }
 
@@ -158,13 +158,13 @@
     height: 600px;
     color: #FFF;
     background-image: url("images/contact.png");
-    height: 385px; }
+    height: 400px; }
 
   .pic:before {
     content: url("images/line.png");
     position: relative;
     margin-left: 20px;
-    margin-left: 55px; } }
+    margin-left: 10px; } }
 @media (max-width: 768px) {
   .mt-s-1 {
     margin-top: 20px; }
