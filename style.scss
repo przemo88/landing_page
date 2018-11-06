@@ -12,10 +12,12 @@ $silver : #777;
 
 @mixin jumbotron{
 	background-image: url('images/jumbotron.jpg');
-	background-size: 100%;
+	background-size: cover;
 	height: 600px;
 	color: $white;
 }
+
+
 
 @media(max-width: 1550px)
 {
@@ -49,6 +51,12 @@ $silver : #777;
 .services{
 	padding: 0px 50px;
 }
+
+	.pic::before{
+		content: url('images/line.png');
+		position: relative;
+		margin-left: 20px;
+	}
 
 .bold{
 	font-weight: bold;
@@ -119,11 +127,7 @@ $silver : #777;
 		font-size: 15px;
 	}
 
-
 	
-	.line{
-		margin-left: 4vh;
-	}
 	
 	.contact{
 	@include jumbotron;
