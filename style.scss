@@ -59,6 +59,7 @@ $silver : #777;
 	.pic{
 		&:before{
 		@include picture;
+		margin-left: 550px;
 	}
 }
 .bold{
@@ -138,9 +139,7 @@ $silver : #777;
 	height: 385px;
 }
 
-	.services{
-		color: red;
-	}
+	
 
 		.pic{
 		&:before{
@@ -205,10 +204,21 @@ $silver : #777;
 
 	.contact{
 	background-image: url("images/contact.png");
-	background-size: 100%;
+	background-size: cover;
+	height: 600px;
 
 }
-	
+
+.pic{
+		&:before{
+		@include picture;
+		display: none;
+		}
+	}
+}
+
+.form{
+
 }
 
 
