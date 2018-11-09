@@ -4,21 +4,47 @@
 .border {
   border: 1px solid black; }
 
+.jumbotron {
+  background-image: url("images/jumbotron.jpg");
+  background-size: cover;
+  color: #FFF; }
+
+.contact {
+  background-image: url("images/contact.png");
+  background-size: cover;
+  color: #FFF; }
+
+.roboto {
+  font-family: 'Roboto Slab', serif; }
+
+.droid {
+  font-family: "Droid Serif", serif; }
+
+.mont {
+  font-family: 'Montserrat', sans-serif; }
+
+.timeline .row {
+  background-color: red; }
+  .timeline .row:not(:first-child) {
+    margin-bottom: 100px; }
+.timeline .pic {
+  position: relative; }
+  .timeline .pic img {
+    max-width: 100%; }
+  .timeline .pic:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    background-color: silver;
+    position: absolute;
+    left: 50%; }
+.timeline .row:last-child .pic:after {
+  display: none; }
+
 @media (max-width: 1550px) {
-  .roboto {
-    font-family: 'Roboto Slab', serif; }
-
-  .droid {
-    font-family: "Droid Serif", serif; }
-
-  .mont {
-    font-family: 'Montserrat', sans-serif; }
-
   .jumbotron {
-    background-image: url("images/jumbotron.jpg");
-    background-size: cover;
-    height: 600px;
-    color: #FFF; }
+    height: 600px; }
 
   .nav a {
     color: #FFF; }
@@ -28,12 +54,6 @@
 
   .services {
     padding: 0px 50px; }
-
-  .pic:before {
-    content: url("images/line.png");
-    position: relative;
-    margin-left: 20px;
-    margin-left: 10px; }
 
   .bold {
     font-weight: bold; }
@@ -45,11 +65,6 @@
     margin-left: 20px; }
 
   .contact {
-    background-image: url("images/jumbotron.jpg");
-    background-size: cover;
-    height: 600px;
-    color: #FFF;
-    background-image: url("images/contact.png");
     height: 460px; }
 
   ::-webkit-input-placeholder {
@@ -153,18 +168,7 @@
     font-size: 15px; }
 
   .contact {
-    background-image: url("images/jumbotron.jpg");
-    background-size: cover;
-    height: 600px;
-    color: #FFF;
-    background-image: url("images/contact.png");
-    height: 400px; }
-
-  .pic:before {
-    content: url("images/line.png");
-    position: relative;
-    margin-left: 20px;
-    margin-left: 50px; } }
+    height: 400px; } }
 @media (max-width: 768px) {
   .mt-s-1 {
     margin-top: 20px !important; }
@@ -274,15 +278,7 @@
     display: inline-block; }
 
   .contact {
-    background-image: url("images/contact.png");
-    background-size: cover;
-    height: 600px; }
-
-  .pic:before {
-    content: url("images/line.png");
-    position: relative;
-    margin-left: 20px;
-    display: none; } }
+    height: 600px; } }
 .mt-1 {
   margin-top: 20px; }
 
