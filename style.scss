@@ -33,8 +33,6 @@ $silver : #777;
 }
 
 
-
-
 .roboto{
 	font-family: 'Roboto Slab', serif;
 }
@@ -49,12 +47,8 @@ $silver : #777;
 
 .timeline{
 	.row{	
-		background-color: red;
 		&:not(:first-child){
 			margin-bottom: 100px;
-			
-			
-
 		}
 
 	}
@@ -72,6 +66,7 @@ $silver : #777;
 			position: absolute;
 			left: 50%;
 		}
+
 	}
 
 	.row:last-child .pic{
@@ -79,7 +74,35 @@ $silver : #777;
 				display: none;
 			}
 		}
+
+	
 }
+
+.nav{
+	a{	
+		color: $white;
+	}
+}
+
+@for $a from 1 through 25{
+	.mt-#{$a} 
+	{
+		margin-top: 10px + 10 * $a;
+	}
+} 
+
+.bold{
+	font-weight: bold;
+}
+
+.portfolio{
+	background-color: #f7f7f7;
+}
+
+.padding{
+	padding-bottom: 20px;
+}
+
 
 @media(max-width: 1550px)
 {
@@ -89,11 +112,7 @@ $silver : #777;
 		height: 600px;
 	}
 
-.nav{
-	a{	
-		color: $white;
-	}
-}
+
 
 .silver-color{
 	color: $silver;
@@ -101,16 +120,6 @@ $silver : #777;
 
 .services{
 	padding: 0px 50px;
-}
-
-	
-
-.bold{
-	font-weight: bold;
-}
-
-.portfolio{
-	background-color: #f7f7f7;
 }
 
 .ml-1{
@@ -146,14 +155,7 @@ $silver : #777;
 
 	.ml-1{
 	margin-left: 50px;
-}
-
-	@for $a from 1 through 25{
-	.mt-m-#{$a} 
-	{
-		margin-top: 10px + 10 * $a+!important;
 	}
-} 
 
 	.jumbotron{
 	
@@ -172,29 +174,25 @@ $silver : #777;
 		font-size: 15px;
 	}
 
-	
-	
 	.contact{
 	height: 400px;
-}
+	}
+
+@for $a from 1 through 25{
+	.mt-m-#{$a}{
+		margin-top: 10px + 10 * $a+!important;
+		}
+	} 
 
 }
-
-
 
 @media(max-width: 768px)
 {
-	@for $a from 1 through 25{
-	.mt-s-#{$a} 
-	{
-		margin-top: 10px + 10 * $a!important;
-	}
-} 
 	
 
 	.jumbotron{
-		height: 250px;
-}
+		height: 350px;
+	}
 
 	a{
 		font-size: 15px;
@@ -205,9 +203,6 @@ $silver : #777;
 		margin-top: -45px;
 	}
 
-	nav a:hover{
-		background-color: red;
-	}
 
 	h2{
 		font-size: 18px;
@@ -230,27 +225,36 @@ $silver : #777;
 		margin-left: 2vw;
 	}
 
+	.pic{}
+
+	.description{
+		margin-top: -15px;
+	}
+
 	.team{
 		display: inline-block;
 	}
 
 	.contact{
-	height: 600px;
+		height: 600px;
+	}
 
-}
-
-
-}
-
-.form{
-
-}
-
-
-@for $a from 1 through 25{
-	.mt-#{$a} 
+	@for $a from 1 through 25{
+	.mt-s-#{$a} 
 	{
-		margin-top: 10px + 10 * $a;
+		margin-top: 10px + 10 * $a!important;
 	}
 } 
+	
+
+
+}
+
+
+
+
+
+
+
+
 
