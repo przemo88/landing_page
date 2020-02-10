@@ -45,7 +45,38 @@ $silver : #777;
 	font-family: 'Montserrat', sans-serif;
 }
 
+.timeline{
+	.row{	
+		&:not(:first-child){
+			margin-bottom: 100px;
+		}
 
+	}
+	.pic{
+		position: relative;
+		img{
+			max-width: 100%;
+		}
+		&:after{
+			content: "";
+			display: block;
+			width: 1px;
+			height: 100px;
+			background-color: silver;
+			position: absolute;
+			left: 50%;
+		}
+
+	}
+
+	.row:last-child .pic{
+			&:after{
+				display: none;
+			}
+		}
+
+	
+}
 
 .nav{
 	a{	
@@ -73,7 +104,7 @@ $silver : #777;
 }
 
 
-@media (min-width: 1001px) and (max-width: 1550px)
+@media(max-width: 1550px)
 {
 
 
@@ -115,41 +146,8 @@ $silver : #777;
 		display: inline-block;
 	}
 
-
-
-.timeline{
-	.row{	
-		&:not(:first-child){
-			margin-bottom: 100px;
-		}
-
-	}
-	.pic{
-		position: relative;
-		img{
-			max-width: 100%;
-		}
-		&:after{
-			content: "";
-			display: block;
-			width: 1px;
-			height: 100px;
-			background-color: silver;
-			position: absolute;
-			left: 50%;
-		}
-
-	}
-
-	.row:last-child .pic{
-			&:after{
-				display: none;
-			}
-		}
-
-	
 }
-}
+
 
 
 @media( max-width: 1000px)
@@ -177,26 +175,8 @@ $silver : #777;
 	}
 
 	.contact{
-	height: 600px;
+	height: 400px;
 	}
-
-	.section_border{
-		margin-top: 50px;
-	}
-
-	.text-center{
-		float: right;
-		margin: 0;
-	}
-
-	.pic{
-		
-		img{
-			width: 50%;
-		}
-	}
-
-
 
 @for $a from 1 through 25{
 	.mt-m-#{$a}{
@@ -211,7 +191,7 @@ $silver : #777;
 	
 
 	.jumbotron{
-		height: 380px;
+		height: 350px;
 	}
 
 	a{
@@ -266,19 +246,7 @@ $silver : #777;
 	}
 } 
 	
-@media(max-width: 767px){
-	
 
-	.jumbotron{
-		height: 400px;
-	}
-
-	@for $a from 1 through 12{
-		.col-#{$a}{
-			width: 8.33% * $a;
-		}
-	}
-}
 
 }
 

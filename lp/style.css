@@ -23,6 +23,23 @@
 .mont {
   font-family: 'Montserrat', sans-serif; }
 
+.timeline .row:not(:first-child) {
+  margin-bottom: 100px; }
+.timeline .pic {
+  position: relative; }
+  .timeline .pic img {
+    max-width: 100%; }
+  .timeline .pic:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    background-color: silver;
+    position: absolute;
+    left: 50%; }
+.timeline .row:last-child .pic:after {
+  display: none; }
+
 .nav a {
   color: #FFF; }
 
@@ -110,213 +127,233 @@
 .padding {
   padding-bottom: 20px; }
 
-@media (min-width: 1001px) and (max-width: 1550px) {
+@media (max-width: 1550px) {
   .jumbotron {
     height: 600px; }
+
   .silver-color {
     color: #777; }
+
   .services {
     padding: 0px 50px; }
+
   .ml-1 {
     margin-left: 20px; }
+
   .contact {
     height: 460px; }
+
   ::-webkit-input-placeholder {
     font-size: 13px !important; }
+
   .foo {
     height: 100px; }
+
   .line {
     margin-left: 1vh; }
-  .team {
-    display: inline-block; }
-  .timeline .row:not(:first-child) {
-    margin-bottom: 100px; }
-  .timeline .pic {
-    position: relative; }
-    .timeline .pic img {
-      max-width: 100%; }
-    .timeline .pic:after {
-      content: "";
-      display: block;
-      width: 1px;
-      height: 100px;
-      background-color: silver;
-      position: absolute;
-      left: 50%; }
-  .timeline .row:last-child .pic:after {
-    display: none; } }
 
+  .team {
+    display: inline-block; } }
 @media (max-width: 1000px) {
   .ml-1 {
     margin-left: 50px; }
+
   .jumbotron {
     height: 388px; }
     .jumbotron h1 {
       font-size: 25px; }
     .jumbotron h2 {
       font-size: 15px; }
+
   a {
     font-size: 15px; }
+
   .contact {
-    height: 600px; }
-  .section_border {
-    margin-top: 50px; }
-  .text-center {
-    float: right;
-    margin: 0; }
-  .pic img {
-    width: 50%; }
+    height: 400px; }
+
   .mt-m-1 {
     margin-top: 20px!important; }
+
   .mt-m-2 {
     margin-top: 30px!important; }
+
   .mt-m-3 {
     margin-top: 40px!important; }
+
   .mt-m-4 {
     margin-top: 50px!important; }
+
   .mt-m-5 {
     margin-top: 60px!important; }
+
   .mt-m-6 {
     margin-top: 70px!important; }
+
   .mt-m-7 {
     margin-top: 80px!important; }
+
   .mt-m-8 {
     margin-top: 90px!important; }
+
   .mt-m-9 {
     margin-top: 100px!important; }
+
   .mt-m-10 {
     margin-top: 110px!important; }
+
   .mt-m-11 {
     margin-top: 120px!important; }
+
   .mt-m-12 {
     margin-top: 130px!important; }
+
   .mt-m-13 {
     margin-top: 140px!important; }
+
   .mt-m-14 {
     margin-top: 150px!important; }
+
   .mt-m-15 {
     margin-top: 160px!important; }
+
   .mt-m-16 {
     margin-top: 170px!important; }
+
   .mt-m-17 {
     margin-top: 180px!important; }
+
   .mt-m-18 {
     margin-top: 190px!important; }
+
   .mt-m-19 {
     margin-top: 200px!important; }
+
   .mt-m-20 {
     margin-top: 210px!important; }
+
   .mt-m-21 {
     margin-top: 220px!important; }
+
   .mt-m-22 {
     margin-top: 230px!important; }
+
   .mt-m-23 {
     margin-top: 240px!important; }
+
   .mt-m-24 {
     margin-top: 250px!important; }
+
   .mt-m-25 {
     margin-top: 260px!important; } }
-
 @media (max-width: 768px) {
   .jumbotron {
-    height: 380px; }
+    height: 350px; }
+
   a {
     font-size: 15px;
     margin-top: -10px; }
+
   .navbar-header {
     margin-top: -45px; }
+
   h2 {
     font-size: 18px; }
+
   h1 {
     font-size: 15px; }
+
   .test {
     display: inline;
     background-color: red; }
+
   .ml-s-1 {
     margin-left: -10px !important; }
+
   .last {
     margin-left: 2vw; }
+
   .description {
     margin-top: -15px; }
+
   .team {
     display: inline-block; }
+
   .contact {
     height: 600px; }
+
   .mt-s-1 {
     margin-top: 20px !important; }
+
   .mt-s-2 {
     margin-top: 30px !important; }
+
   .mt-s-3 {
     margin-top: 40px !important; }
+
   .mt-s-4 {
     margin-top: 50px !important; }
+
   .mt-s-5 {
     margin-top: 60px !important; }
+
   .mt-s-6 {
     margin-top: 70px !important; }
+
   .mt-s-7 {
     margin-top: 80px !important; }
+
   .mt-s-8 {
     margin-top: 90px !important; }
+
   .mt-s-9 {
     margin-top: 100px !important; }
+
   .mt-s-10 {
     margin-top: 110px !important; }
+
   .mt-s-11 {
     margin-top: 120px !important; }
+
   .mt-s-12 {
     margin-top: 130px !important; }
+
   .mt-s-13 {
     margin-top: 140px !important; }
+
   .mt-s-14 {
     margin-top: 150px !important; }
+
   .mt-s-15 {
     margin-top: 160px !important; }
+
   .mt-s-16 {
     margin-top: 170px !important; }
+
   .mt-s-17 {
     margin-top: 180px !important; }
+
   .mt-s-18 {
     margin-top: 190px !important; }
+
   .mt-s-19 {
     margin-top: 200px !important; }
+
   .mt-s-20 {
     margin-top: 210px !important; }
+
   .mt-s-21 {
     margin-top: 220px !important; }
+
   .mt-s-22 {
     margin-top: 230px !important; }
+
   .mt-s-23 {
     margin-top: 240px !important; }
+
   .mt-s-24 {
     margin-top: 250px !important; }
+
   .mt-s-25 {
     margin-top: 260px !important; } }
 
-@media (max-width: 768px) and (max-width: 767px) {
-  .jumbotron {
-    height: 400px; }
-  .col-1 {
-    width: 8.33%; }
-  .col-2 {
-    width: 16.66%; }
-  .col-3 {
-    width: 24.99%; }
-  .col-4 {
-    width: 33.32%; }
-  .col-5 {
-    width: 41.65%; }
-  .col-6 {
-    width: 49.98%; }
-  .col-7 {
-    width: 58.31%; }
-  .col-8 {
-    width: 66.64%; }
-  .col-9 {
-    width: 74.97%; }
-  .col-10 {
-    width: 83.3%; }
-  .col-11 {
-    width: 91.63%; }
-  .col-12 {
-    width: 99.96%; } }
+/*# sourceMappingURL=style.css.map */

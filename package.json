@@ -1,0 +1,26 @@
+{
+    "scripts": {
+        "watch": "npm-run-all -p watch:*",
+        "watch:sass": "node-sass --watch style.scss style.css",
+        "watch:browsersync": "browser-sync start --server --files *.scss *.css *.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://https://github.com/przemo88/landing_page"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://https://github.com/przemo88/landing_page/issues"
+    },
+    "homepage": "https://przemo88.github.io/landing_page/#readme",
+    "devDependencies": {
+        "browser-sync": "^2.26.3",
+        "npm-run-all": "^4.1.5"
+    },
+    "dependencies": {
+        "node-sass": "^4.13.1",
+        "npm-build": "0.0.1"
+    }
+}
