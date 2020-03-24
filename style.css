@@ -17,9 +17,10 @@
   background-color: transparent;
   border: transparent;
   position: absolute;
-  width: 98vw;
+  width: 100vw;
   overflow-x: hidden;
-  font-weight: bold; }
+  font-weight: bold;
+  overflow-y: hidden; }
 
 .logo {
   margin-left: 13vw; }
