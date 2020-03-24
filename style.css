@@ -1,13 +1,39 @@
 * {
-  text-align: center; }
+  text-align: center;
+  color: black; }
 
 .border {
   border: 1px solid black; }
+
+.white {
+  color: #f7f7f7; }
 
 .jumbotron {
   background-image: url("images/jumbotron.jpg");
   background-size: cover;
   color: #FFF; }
+
+.navbar-inverse {
+  background-color: transparent;
+  border: transparent;
+  position: absolute;
+  width: 98vw;
+  overflow-x: hidden;
+  font-weight: bold; }
+
+.logo {
+  margin-left: 13vw; }
+
+.menu_list {
+  margin-left: 20vw; }
+
+.menu_item {
+  font-weight: 600; }
+  .menu_item:hover {
+    background-color: #f7f7f7; }
+
+a:hover {
+  color: black !important; }
 
 .contact {
   background-image: url("images/contact.png");
@@ -223,8 +249,6 @@
   a {
     font-size: 15px;
     margin-top: -10px; }
-  .navbar-header {
-    margin-top: -45px; }
   h2 {
     font-size: 18px; }
   h1 {
@@ -294,8 +318,18 @@
     margin-top: 260px !important; } }
 
 @media (max-width: 768px) and (max-width: 767px) {
+  .navbar-inverse {
+    background-color: #112526;
+    margin-top: 0; }
+  .menu_item {
+    height: 74px; }
+  ul {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important; }
   .jumbotron {
-    height: 400px; }
+    height: 400px;
+    padding: 0; }
   .col-1 {
     width: 8.33%; }
   .col-2 {

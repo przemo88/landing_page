@@ -1,16 +1,21 @@
 *{
 	text-align: center;
+	color: black;
 }
 
 .border{
 	border: 1px solid black;
 }
 
+
+
 $white : #FFF;
 
 $silver : #777;
 
-
+.white{
+	color: #f7f7f7;
+}
 
 @mixin jumbotron($url-image){
 	background-image: url($url-image);
@@ -20,6 +25,42 @@ $silver : #777;
 
 .jumbotron{
 	@include jumbotron('images/jumbotron.jpg');
+	
+}
+
+.navbar-inverse{
+	background-color: transparent;
+	border: transparent;
+	position: absolute;
+	width: 98vw;
+	overflow-x: hidden;
+	font-weight: bold;
+}
+
+.logo{
+	margin-left: 13vw;
+}
+
+.menu_list{
+	margin-left: 20vw;
+}
+
+.menu_item{
+
+	font-weight: 600;
+
+	
+	
+	&:hover{
+		background-color: #f7f7f7;
+	}
+}
+
+a{
+	&:hover{
+		color: black !important;
+	}
+	
 }
 
 .contact{
@@ -218,9 +259,7 @@ $silver : #777;
 		margin-top: -10px;
 	}
 
-	.navbar-header{
-		margin-top: -45px;
-	}
+	
 
 
 	h2{
@@ -267,9 +306,23 @@ $silver : #777;
 	
 @media(max-width: 767px){
 	
+	.navbar-inverse{
+	background-color: #112526;
+	margin-top: 0;
+	}
 
+	.menu_item{
+		height: 74px;
+	}
+
+	ul{
+		width: 100%;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
 	.jumbotron{
 		height: 400px;
+		padding: 0;
 	}
 
 	@for $a from 1 through 12{

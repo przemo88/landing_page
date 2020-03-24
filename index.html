@@ -3,234 +3,249 @@
 
 <head>
 	<title>Landing page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
 		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=max-width initial-scale=1">
+	<meta name="viewport" content="width=max-width initial-scale=1 shrink-to-fit=no">
 </head>
 
 <body>
 
 	<div class="jumbotron">
-		<div class="container">
-
-			<header>
-
-				<div class="col-lg-4 col-md-4">
-					<nav class="navbar-left h5 mont">
+		<div>
+			<div class="col-lg-4 col-md-4">
+				<nav class="navbar navbar-inverse navbar-fixed-top mont">
+					<div>
 						<div class="navbar-header">
-							<a class="navbar-brand" href="#">
-								<img class="" alt="Brand" src="images/logo.png">
-							</a>
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#myNavbar" aria-expanded="false">
+
+								<span class="sr-only"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+
+							</button>
+
+							<p id="brandName" class="navbar-text">
+								<img class="logo" alt="Brand" src="images/logo.png">
+							</p>
 						</div>
-				</div>
-				<div class="col-lg-7 col-md-7 col-lg-offset-1 h4">
-					<ul class="nav navbar-nav">
-						<div class="navbar-header"></div>
-						<li><a class="mont" href="#">HOME</a></li>
-						<li><a class="mont" href="#">SERVICES</a></li>
-						<li><a class="mont" href="#">PORTFOLIO</a></li>
-						<li><a class="mont" href="#">ABOUT</a></li>
-						<li><a class="mont" href="#">CONTACT</a></li>
-					</ul>
-				</div>
+						<div class="collapse navbar-collapse col-lg-7 col-md-7 col-lg-offset-1 h4" id="myNavbar">
+							<ul class="nav navbar-nav menu_list">
 
-				</nav>
+								<li class="menu_item"><a class="mont" href="#">HOME</a></li>
+								<li class="menu_item"><a class="mont" href="#">SERVICES</a></li>
+								<li class="menu_item"><a class="mont" href="#">PORTFOLIO</a></li>
+								<li class="menu_item"><a class="mont" href="#">ABOUT</a></li>
+								<li class="menu_item"><a class="mont" href="#">CONTACT</a></li>
 
-			</header>
-		</div>
 
-		<div class="container">
-			<h2 class="droid mt-15 mt-m-1">WELCOME TO OUR STUDIO!</h2>
-			<h1 class="mt-2 droid">IT'S NICE TO MEET YOU!</h1>
-			<p><a class="btn btn-primary btn-lg btn-warning  mt-1 mont" href="#" role="button">TELL ME MORE</a></p>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="h2 mt-m-5 mont mt-s-1"><strong>SERVICES</strong></div>
-		<div class="mt-1 droid h5 silver-color"><i>Proin iaculis purus consequat sem cure</i></div>
-	</div>
-
-	<div class="portfolio mt-2">
-		<div class="container mt-1 mt-m-1 mt-s-1">
-
-			<div class="row">
-				<div class="col-lg-4 col-xs">
-					<div> <img src="images/img1.png" alt="" />
-						<h3>E-Commerce</h3>
-						<div>
-							<p>Proin iaculis purus consequat sem cure
-								digni ssim. Donec porttitora entum suscipit
-								aenean rhoncus posuere odio in tincidunt. </p>
+							</ul>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4">
-					<img src="images/img2.png" alt="" />
-					<h3>Responsive Web</h3>
-					<p>Proin iaculis purus consequat sem cure
-						digni ssim. Donec porttitora entum suscipit
-						aenean rhoncus posuere odio in tincidunt. </p>
-				</div>
-				<div class="col-lg-4">
-					<img src="images/img3.png" alt="" />
-					<h3>Web Security</h3>
+				</nav>
 
-					<p>Proin iaculis purus consequat sem cure
-						digni ssim. Donec porttitora entum suscipit
-						aenean rhoncus posuere odio in tincidunt. </p>
-				</div>
+
+			</div>
+
+			<div class="container droid white">
+				<h2 class="droid mt-20 mt-m-1 mt-s-10">WELCOME TO OUR STUDIO!</h2>
+				<h1 class="mt-2 droid">IT'S NICE TO MEET YOU!</h1>
+				<p><a class="btn btn-primary btn-lg btn-warning  mt-1 mont" href="#" role="button">TELL ME MORE</a></p>
 			</div>
 		</div>
-	</div>
 
-
-	<div class="container mt-1 timeline">
-		<div class="row">
-			<div class="h2 mont col-lg-12 col-md-12"><strong>ABOUT US</strong></div>
+		<div class="container">
+			<div class="h2 mt-15 mt-m-5 mont mt-s-15"><strong>SERVICES</strong></div>
 			<div class="mt-1 droid h5 silver-color"><i>Proin iaculis purus consequat sem cure</i></div>
 		</div>
 
-		<div class="row section_border">
-			<div class="col-lg-3 col-md-3 col-xs-6 col-12 col-lg-offset-2 col-md-offset-2">
-				<strong class="bold mont h4 ">JULY 2010
-					</br>Our Hubmle Beginnings</strong>
-				</br></br>
-				<div class="gold text-center col-12">Lorem ipsum dolor sit amet,
-					consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-				</div>
-			</div>
+		<div class="portfolio mt-2">
+			<div class="container mt-1 mt-m-1 mt-s-1">
 
-			<div class="col-lg-2 col-md-2 mt-2 col-xs-6 col-12 pic"><img src="images/im1.png"></div>
+				<div class="row">
+					<div class="col-lg-4 col-xs">
+						<div> <img src="images/img1.png" alt="" />
+							<h3>E-Commerce</h3>
+							<div>
+								<p>Proin iaculis purus consequat sem cure
+									digni ssim. Donec porttitora entum suscipit
+									aenean rhoncus posuere odio in tincidunt. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<img src="images/img2.png" alt="" />
+						<h3>Responsive Web</h3>
+						<p>Proin iaculis purus consequat sem cure
+							digni ssim. Donec porttitora entum suscipit
+							aenean rhoncus posuere odio in tincidunt. </p>
+					</div>
+					<div class="col-lg-4">
+						<img src="images/img3.png" alt="" />
+						<h3>Web Security</h3>
 
-
-		</div>
-
-		<div class="row section_border">
-			<div class="col-lg-2 col-md-2 col-xs-6 col-12 col-lg-offset-5 col-md-offset-5 pic"><img
-					src="images/im2.png"></div>
-
-			<div class="col-lg-3 col-md-3 col-xs-6 col-12 ml-1 ml-s-1  text-center">
-				<strong class="bold mont h4 col-12">JANUARY 2011
-					</br>Facing Startup Battles</strong>
-				</br></br>
-				<div class="gold text-center col-12">Lorem ipsum dolor sit amet,
-					consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-				</div>
-			</div>
-		</div>
-
-		<div class="row temp section_border">
-			<div class="col-lg-3 col-md-3 col-xs-6 col-12 col-lg-offset-2 col-md-offset-2">
-				<strong class="bold mont h4 col-12">SEPTEMBER 2012
-					</br>Our Hubmle Beginnings</strong>
-				</br></br>
-				<div class="gold text-center col-12">Lorem ipsum dolor sit amet,
-					consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-				</div>
-			</div>
-
-			<div class="col-lg-2 col-md-2 col-xs-6 col-12 pic"><img src="images/im3.png"></div>
-
-		</div>
-
-		<div class="row section_border">
-			<div class="col-lg-2 col-md-2 col-xs-6 col-12 col-lg-offset-5 col-md-offset-5 pic"><img
-					src="images/im4.png"></div>
-
-			<div class="col-lg-3 col-md-3 col-xs-6 ml-1 ml-s-1 col-12 text-center">
-				<strong class="bold mont h4 col-12">JANUARY 2014
-					</br>Our Triumph</strong>
-				</br></br>
-				<div class="gold text-center col-12">Lorem ipsum dolor sit amet,
-					consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						<p>Proin iaculis purus consequat sem cure
+							digni ssim. Donec porttitora entum suscipit
+							aenean rhoncus posuere odio in tincidunt. </p>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="row temp section_border">
-			<div class="col-lg-3 col-md-3 col-xs-6 col-12 col-lg-offset-2 col-md-offset-2">
-				<strong class="bold mont h4 col-12">
-				</strong>
-				</br></br>
-				<div class="gold text-center col-12">
-				</div>
-			</div>
 
-			<div class="col-lg-2 col-md-2 col-xs-6 col-12 pic"><img src="images/im5.png"></div>
-
-		</div>
-
-	</div>
-
-	<div class="portfolio">
-
-		<div class="container mt-1">
-
+		<div class="container mt-1 timeline">
 			<div class="row">
-				<div class="col-lg-4 col-md-4  col-xs-12 mt-1 ">
-					<div> <img src="images/team.png" alt="" />
-						<h3>Kimberly Tompson</h3>
-						<div class="mt-m-1">
-							<p class="silver-color">Marketer </p>
-							<img src="images/twitter.png">
-							<img class="ml-1" src="images/fb.png">
-							<img class="ml-1" src="images/pintarest.png">
-						</div>
+				<div class="h2 mont col-lg-12 col-md-12"><strong>ABOUT US</strong></div>
+				<div class="mt-1 droid h5 silver-color"><i>Proin iaculis purus consequat sem cure</i></div>
+			</div>
 
+			<div class="row section_border">
+				<div class="col-lg-3 col-md-3 col-xs-6 col-12 col-lg-offset-2 col-md-offset-2">
+					<strong class="bold mont h4 ">JULY 2010
+						</br>Our Hubmle Beginnings</strong>
+					</br></br>
+					<div class="gold text-center col-12">Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-4 col-xs-12 mt-1">
-					<div> <img src="images/team.png" alt="" />
-						<h3>Rico Thompson</h3>
-						<div class="mt-m-1">
-							<p class="silver-color">Coder</p>
-							<img src="images/twitter.png">
-							<img class="ml-1" src="images/fb.png">
-							<img class="ml-1" src="images/google+.png">
-						</div>
+				<div class="col-lg-2 col-md-2 mt-2 col-xs-6 col-12 pic"><img src="images/im1.png"></div>
 
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-xs-12 mt-1">
-					<div> <img src="images/team.png" alt="" />
-						<h3>Uku Mason</h3>
-						<div class="mt-m-1">
-							<p class="silver-color">Graphic designer</p>
-							<img src="images/fb.png">
-							<img class="ml-1" src="images/pintarest.png">
-						</div>
 
+			</div>
+
+			<div class="row section_border">
+				<div class="col-lg-2 col-md-2 col-xs-6 col-12 col-lg-offset-5 col-md-offset-5 pic"><img
+						src="images/im2.png"></div>
+
+				<div class="col-lg-3 col-md-3 col-xs-6 col-12 ml-1 ml-s-1  text-center">
+					<strong class="bold mont h4 col-12">JANUARY 2011
+						</br>Facing Startup Battles</strong>
+					</br></br>
+					<div class="gold text-center col-12">Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 					</div>
 				</div>
 			</div>
 
+			<div class="row temp section_border">
+				<div class="col-lg-3 col-md-3 col-xs-6 col-12 col-lg-offset-2 col-md-offset-2">
+					<strong class="bold mont h4 col-12">SEPTEMBER 2012
+						</br>Our Hubmle Beginnings</strong>
+					</br></br>
+					<div class="gold text-center col-12">Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-xs-6 col-12 pic"><img src="images/im3.png"></div>
+
+			</div>
+
+			<div class="row section_border">
+				<div class="col-lg-2 col-md-2 col-xs-6 col-12 col-lg-offset-5 col-md-offset-5 pic"><img
+						src="images/im4.png"></div>
+
+				<div class="col-lg-3 col-md-3 col-xs-6 ml-1 ml-s-1 col-12 text-center">
+					<strong class="bold mont h4 col-12">JANUARY 2014
+						</br>Our Triumph</strong>
+					</br></br>
+					<div class="gold text-center col-12">Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</div>
+				</div>
+			</div>
+
+			<div class="row temp section_border">
+				<div class="col-lg-3 col-md-3 col-xs-6 col-12 col-lg-offset-2 col-md-offset-2">
+					<strong class="bold mont h4 col-12">
+					</strong>
+					</br></br>
+					<div class="gold text-center col-12">
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-xs-6 col-12 pic"><img src="images/im5.png"></div>
+
+			</div>
+
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-8 col-xs-12 col-lg-offset-2 col-md-offset-2 mt-2 silver-color roboto">
-					Lorem ipsum dolor sit amet,
-					consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.
+		<div class="portfolio">
+
+			<div class="container mt-1">
+
+				<div class="row">
+					<div class="col-lg-4 col-md-4  col-xs-12 mt-1 ">
+						<div> <img src="images/team.png" alt="" />
+							<h3>Kimberly Tompson</h3>
+							<div class="mt-m-1">
+								<p class="silver-color">Marketer </p>
+								<img src="images/twitter.png">
+								<img class="ml-1" src="images/fb.png">
+								<img class="ml-1" src="images/pintarest.png">
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-xs-12 mt-1">
+						<div> <img src="images/team.png" alt="" />
+							<h3>Rico Thompson</h3>
+							<div class="mt-m-1">
+								<p class="silver-color">Coder</p>
+								<img src="images/twitter.png">
+								<img class="ml-1" src="images/fb.png">
+								<img class="ml-1" src="images/google+.png">
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-xs-12 mt-1">
+						<div> <img src="images/team.png" alt="" />
+							<h3>Uku Mason</h3>
+							<div class="mt-m-1">
+								<p class="silver-color">Graphic designer</p>
+								<img src="images/fb.png">
+								<img class="ml-1" src="images/pintarest.png">
+							</div>
+
+						</div>
+					</div>
 				</div>
 
 			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-xs-12 col-lg-offset-2 col-md-offset-2 mt-2 silver-color roboto">
+						Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</div>
+
+				</div>
+			</div>
 		</div>
-	</div>
 	</div>
 
 	<div class="container mt-2">
@@ -259,8 +274,10 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-xs-12 mont h2 mt-5 mt-m-1"><strong>CONTACT US</strong></div>
-				<div class="mt-1 droid h5 silver-color mt-1"><i>Proin iaculis purus consequat sem cure</i></div>
+				<div class="col-lg-12 col-md-12 col-xs-12 mont h2 mt-5 mt-m-1"><strong class="white">CONTACT US</strong>
+				</div>
+				<div class="mt-1 droid h5 silver-color mt-1"><i class="white">Proin iaculis purus consequat sem cure</i>
+				</div>
 
 
 
